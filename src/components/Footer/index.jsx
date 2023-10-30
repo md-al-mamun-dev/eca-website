@@ -16,6 +16,9 @@ const Footer = () => {
     <div className={`${styles.footer}`}>
       <div className={` container ${styles.container} `}>
 
+      <div className={`${styles.logo}`}></div>
+
+
         <div className={` ${styles.logo}`} >
           <div className={`  ${styles.logo_image_container}`}>
           <Image 
@@ -26,26 +29,11 @@ const Footer = () => {
             alt="logo"
           />
         </div>
-        </div>        
-
-        <div className={` ${styles.address}`}>
-          <p> 39 abcd Street, Pallabi Mirpur 11 1/2,<br/> Dhaka bangladesh</p>
-        </div>
-
-        <div className={` ${styles.mail_info}`}>
-          <p>demo_mail@gmail.com</p>
-        </div>
-
-        <div className={` ${styles.phone_info}`}>
-          <p> +1012 3456 789</p>
         </div>
 
         <div className={` ${styles.social_links}`}>
           <div className={`${styles.social_icon_container}`}>
-              <Image 
-                  src={fb_icon}
-                  fill
-                  />
+              <Image src={fb_icon} fill />
           </div>
 
           <div className={`${styles.social_icon_container}`}>
@@ -77,21 +65,42 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className={` ${styles.site_map}`}>
-          
+
+        <div className={` ${styles.address}`}>
+          <p> 39 abcd Street, Pallabi Mirpur 11 1/2,<br/> Dhaka bangladesh</p>
         </div>
 
-        <div className={` `}>
-          
+        <div className={` ${styles.mail_info}`}>
+          <p>demo_mail@gmail.com</p>
         </div>
+        <div className={` ${styles.phone_info}`}>
+          <p> +1012 3456 789</p>
+        </div>
+
+        <div className={` ${styles.site_map}`}> </div>
+
+        <div className={`${styles.up_navigation} `}> </div>
+
+        {/* 
+
+        
+
+
+
+        <div className={` ${styles.site_map}`}> </div>
+
+         */}
 
 
         
 
       </div>
+
+
+      
       <div className={`round_10 hr-bar w-60 h-center`} />
       <div  className={`${styles.copywrite}`}>
-        <p><span>&#169;</span> 2023 Environment care associate. All rights reserved.</p>
+        <p><span>&#169;</span> 2023 Environment Care Associate. All rights reserved.</p>
 
       </div>
         

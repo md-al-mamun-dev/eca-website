@@ -11,31 +11,51 @@
     /* left: 0; */
     /* bottom: 0; */
     /* max-height: 100px; */
-    min-height: 400px;
+    /* min-height: 100px; */
     padding: var(--size-500) var(--size-000);
 }
 
 .container{
+    /* border: 1px solid red; */
+
     min-height: inherit;
-    padding-bottom: var(--size-700);
+    /* padding-bottom: var(--size-700); */
     display: grid;
-    grid-template-areas:    "logo site_map up_navigation"
-                            "logo site_map up_navigation"
-                            "social_links site_map up_navigation"
-                            "address site_map up_navigation"
-                            "mail_info site_map up_navigation"
-                            "phone_info site_map up_navigation"
+    grid-column-gap: var(--size-300);
+    grid-template-columns: .5fr  .6fr 1fr .5fr;
+    grid-template-rows: .5fr .5fr .5fr .5fr 1fr;
+
+    grid-template-areas:    "logo           .               site_map    up_navigation "
+                            "logo           phone_info      site_map    up_navigation "
+                            "logo           mail_info       site_map    up_navigation "
+                            "logo           address         site_map    up_navigation "
+                            "logo           social_links    site_map    up_navigation "
+
+
+
+
 
                             
 }
 
 .logo{
     grid-area: logo;
+    /* border: 1px solid red; */
 }
 .logo > .logo_image_container{
     /* border: 3px solid red; */
-    height: 100px;
+    height: 100%;
+    width: 100%;
+    
     position: relative;
+    margin-bottom: -100px;
+    display: flex;
+    align-items: center;
+    /* margin: 0 auto; */
+}
+.logo_image_container > img{
+    max-width: 180px;
+    /* align-self: center; */
 }
 
 .address{
@@ -46,39 +66,56 @@
 .mail_info{
     grid-area: mail_info;
     color: white;
+    /* border: 3px solid red; */
+    /* margin-top:10px; */
+
 }
 .phone_info{
     grid-area: phone_info;
     color: white;
-
+    /* border: 3px solid red; */
+    /* max-height: 30px; */
+    position: relative;
+    margin-bottom: 0;
+    /* max-height: 40px; */
 }
+/* .phone_info> p{
+    border: 3px solid red;
+    position: absolute;
+    bottom: 0;
+} */
 .social_links{
     grid-area: social_links;
-    /* position: relative; */
+    position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 10px;
-    border: 1px solid red;
+    margin-top:16px;
+    margin-bottom:16px;
+    margin-left: 16px;
+
+    /* border: 1px solid red; */
 
 }
 .social_links > .social_icon_container{
     position: relative;
-    min-height: 30px;
-    width: 30px;
-    border: 1px solid red;
+    min-height: 33px;
+    min-width: 33px;
+
+    /* border: 1px solid red; */
 
 }
 .site_map{
     grid-area: site_map;
-    width: 60%;
+ 
     /* border: 1px solid red; */
 
 }
 .up_navigation{
     grid-area: up_navigation;
+    min-width: 30%;
     /* border: 1px solid red; */
-
 }
 
 .copywrite{
