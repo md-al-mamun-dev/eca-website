@@ -1,0 +1,22 @@
+.container{
+    /* border: 1px solid red; */
+    min-height: 65vh;
+
+    width: 100%;
+    background: url("/images/research-background.jpg"), rgba(29, 29, 29, 0.85);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    /* margin-top: 100px; */
+    /* background-size: 100% 100%; */
+    background-position: center;
+    padding-top: var(--size-700);
+}
+
+.title{
+    color: aliceblue;
+    text-align: center;
+    font-size: var(--fs-900);
+    letter-spacing: var(--letter-spacing-300) ;
+    font-weight: var(--fw-semi-bold);
+}
