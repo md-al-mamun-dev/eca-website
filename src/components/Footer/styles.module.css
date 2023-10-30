@@ -22,14 +22,17 @@
     /* padding-bottom: var(--size-700); */
     display: grid;
     grid-column-gap: var(--size-300);
-    grid-template-columns: .5fr  .6fr 1fr .5fr;
-    grid-template-rows: .5fr .5fr .5fr .5fr 1fr;
+    grid-template-columns: .4fr  .6fr 1fr .5fr;
+    grid-template-rows:     1.2fr .5fr .5fr .5fr 1fr 1.2fr;
 
-    grid-template-areas:    "logo           .               site_map    up_navigation "
+    grid-template-areas:    
+                            "logo           .               site_map    up_navigation "
                             "logo           phone_info      site_map    up_navigation "
                             "logo           mail_info       site_map    up_navigation "
                             "logo           address         site_map    up_navigation "
                             "logo           social_links    site_map    up_navigation "
+                            "logo           .               site_map    up_navigation "
+
 
 
 
@@ -54,7 +57,7 @@
     /* margin: 0 auto; */
 }
 .logo_image_container > img{
-    max-width: 180px;
+    max-width: 200px;
     /* align-self: center; */
 }
 
