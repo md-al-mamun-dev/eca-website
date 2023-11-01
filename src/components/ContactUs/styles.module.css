@@ -2,73 +2,141 @@
 .container{
     margin-bottom: var(--size-700);
     margin-top: var(--size-700);
-
-  /* border: 1px solid red; */
-
 }
 .contact_us_header {
     padding: var(--size-400) var(--size-700) var(--size-500) var(--size-700);
-    /* padding-right: var(--size-700); */
-    /* padding: var(--size-700) var(--size-000); */
 }
 
 .contact_us_header >h2{
+    font-size: var(--fs-700);
+    font-weight: var(--fw-bold);
+    letter-spacing: var(--letter-spacing-200) ;
+}
+
+@media screen and (min-width: 992px) {
+    .contact_us_header >h2{
+        font-size: var(--fs-750);
+        letter-spacing: var(--letter-spacing-250) ;
+    }
+  }
+
+@media screen and (min-width: 1024px) {
+    .contact_us_header >h2{
+        font-size: var(--fs-750);
+        letter-spacing: var(--letter-spacing-300) ;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .contact_us_header >h2{
+        font-size: var(--fs-800);
+        letter-spacing: var(--letter-spacing-300) ;
+    }
+}
+/* .contact_us_header >h2{
     font-size: var(--fs-800);
     font-weight: var(--fw-bold);
     letter-spacing: var(--letter-spacing-300) ;
-}
+} */
 
 .contacts{
     background: rgb(249, 248, 248);
     min-height: 200px;
-    display: grid;
-    grid-template-columns: 40% auto;
-/* grid-template-rows: 22% auto 22%; */
+    width: 100%;
 }
 
+
 .contacts > *{
-    padding: var(--size-900) var(--size-600);
+    padding-left: var(--size-500);
+    padding-right: var(--size-500);
+}
+
+/* @media only screen and (min-width: 425px) {
+    .contacts > *{
+        padding-left: var(--size-400);
+        padding-right: var(--size-400);
+    }  
+} */
+/* @media only screen and (min-width: 768px) {
+    .contacts{
+        display: flex;
+    } 
+
+} */
+
+@media only screen and (min-width: 1024px) {
+    .contacts{
+        display: flex;
+    } 
+ 
 }
 
 .contact_informations{
-    /* width: 40%; */
-    /* background: rgb(43, 43, 43)   ; */
+    padding-top: var(--size-900);
+    padding-bottom: var(--size-900);
     background: var(--clr-neutral-800);
-
-    border-radius: 10px 0px 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
 }
 
+@media only screen and (min-width: 1024px) {
+    .contact_informations{
+        border-radius: 10px 0px 0px 10px;
+        width: 40%;
+    }
+}
+@media only screen and (min-width: 1440px) {
+    .contact_informations{
+        /* border-radius: 10px 0px 0px 10px; */
+        width: 50%;
+    }
+}
 
-.contact_informations >  .info_header{
-    /* border: 1px solid red; */
+.infos{
+    width: 100%;
+    max-width: 425px;
+}
+
+.info_header{
     color: white;
-    font-size: var(--fs-700);
+    font-size: var(--fs-675);
     font-weight: var(--fw-semi-bold);
     letter-spacing: var(--letter-spacing-200);
-    /* margin-top: 50px; */
-    /* margin-bottom: 50px; */
+    text-align: center;
+    width: 100%;
 }
-
 
 .contact_info_items{
-    /* border: 1px solid red; */
-    margin: var(--size-700) var(--size-600);
-    /* margin: var(--size-700); */
+    margin-top: var(--size-700);
+    margin-bottom: var(--size-700);
 }
-
-/* .hr_bar{
-    min-height: 1px;
-    background: rgb(142, 142, 142);
-} */
-
-
-
 
 .contact_info_item{
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: var(--size-700);
+    gap: var(--size-500);
+}
+
+@media screen and (min-width: 425px) {
+    .contact_info_item{
+        gap: var(--size-600);
+    }
+  }
+
+@media screen and (min-width: 768px) {
+    .contact_info_item{
+        gap: var(--size-700);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .contact_info_item{
+        gap: var(--size-500);
+    }
 }
 
 .contact_info_item > p{
@@ -81,10 +149,7 @@
     min-width: 35px;
     width: fit-content !important;
     position: relative !important;
-    /* height: unset !important; */
     height: 60px;
-    /* padding: 30px; */
-
 }
 
 
@@ -99,21 +164,28 @@
     position: relative !important;
     width: 30px;
     min-height: 30px;
-    /* border: 1px solid red; */
 }
 
-.contact_form{
-    display: grid;
-    grid-template-areas: 
-            "name name name"
-            "email txt_or phone_number"
-            "message message message"
-            "send_btn send_btn send_btn ";
-    margin: 0 auto;
-    align-self: center;
-    /* padding: 10px var(--size-900); */
-    gap: var(--size-400);
 
+.input_container{
+    padding-top: var(--size-500);
+    padding-bottom: var(--size-500);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.input_title{
+    font-size: var(--fs-650);
+    font-weight: var(--fw-semi-bold);
+}
+
+.input_form{
+    width: 100%;
+    max-width: 700px;
 }
 
 .form_item{
@@ -122,62 +194,41 @@
     align-items: flex-start;
     gap: 5px;
 }
-.form_item > input{
-    /* border: 1px solid green; */
+
+.form_item > input, .form_item > textarea {
     border: transparent;
-    min-width: 300px;
-    height: 40px;
-    border-radius: 3px;
-    border-bottom: 2px solid green;
+    width: 100%;
+    min-width: 32px;
+    border-radius: 5px;
     padding: var(--size-500) var(--size-500);
+    border-bottom: 1px solid var(--clr-primary-600);
+}
+._txt_or{
+    text-align: center;
+    padding-top: var(--size-200);
+    font-size: var(--fs-500);
+    margin-bottom: var(--size-nagative-400) ;
+}
+.form_item > label{
+    font-size: var(--fs-400);
+    font-weight: var(--fw-semi-bold);
+    padding-left: var(--size-500);
+    letter-spacing: var(--letter-spacing-200);
+    text-transform: uppercase;
+    padding-top: var(--size-200);
+    padding-bottom: var(--size-100);
+}
+
+.form_item > input{
+    height: var(--size-300);
 }
 
 .form_item > textarea{
-    border: transparent;
-    /* min-width: 300px; */
-    width: 100%;
-    height: 250px;
-    border-radius: 3px;
-    /* border-bottom: 2px solid green; */
-    padding: var(--size-500) var(--size-500);
+    min-height: var(--size-1400);
 }
 
-.form_item> .send_btn{
-align-self: flex-end;
+.form_item >button {
+    margin-top: var(--size-400); 
+    margin-left: auto;
+    margin-right: var(--size-400);
 }
-
-
-.form_name{
-    grid-area: name;
-    /* border: 1px solid red; */
-}
-
-
-.form_email{
-    grid-area: email;
-}
-
-._txt_or{
-    grid-area: txt_or;
-    align-items: center;
-    justify-content: center;
-    padding-top: 25px;
-}
-
-.form_phone_number{
-    grid-area: phone_number;
-}
-
-.form_message{
-    grid-area: message;
-}
-
-/* ..form_message{
-    grid-area: name;
-} */
-
-.form_send_btn
-{
-    grid-area: send_btn;
-}
-

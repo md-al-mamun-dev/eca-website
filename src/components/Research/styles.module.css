@@ -12,11 +12,38 @@
     background-position: center;
     padding-top: var(--size-700);
 }
-
 .title{
+    color: white;
+    text-align: center;
+    font-size: var(--fs-700);
+    letter-spacing: var(--letter-spacing-200) ;
+    font-weight: var(--fw-semi-bold);
+}
+
+@media screen and (min-width: 768px) {
+    .title{
+        font-size: var(--fs-750);
+        letter-spacing: var(--letter-spacing-250) ;
+    }
+  }
+
+@media screen and (min-width: 1024px) {
+    .title{
+        font-size: var(--fs-750);
+        letter-spacing: var(--letter-spacing-300) ;
+    }
+  }
+
+@media screen and (min-width: 1440px) {
+.title{
+    font-size: var(--fs-800);
+    letter-spacing: var(--letter-spacing-300) ;
+}
+}
+/* .title{
     color: aliceblue;
     text-align: center;
     font-size: var(--fs-900);
     letter-spacing: var(--letter-spacing-300) ;
     font-weight: var(--fw-semi-bold);
-}
+} */

@@ -11,7 +11,7 @@ export default function Home() {
     console.log(e)
   }
   return (
-    <div className='' >
+    <>
       <Header/>
         <main>
           <Hero/>
@@ -20,6 +20,6 @@ export default function Home() {
         </main>
       <Footer/>
 
-    </div>
+    </>
   )
 }
