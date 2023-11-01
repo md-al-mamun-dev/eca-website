@@ -320,6 +320,8 @@ body{
   height: 1px;
 }
 
+
+
 .w-50{
   width: 50%;  
 }
@@ -351,4 +353,9 @@ body{
   font-weight: var(--fw-semi-bold);
   letter-spacing: var(--letter-spacing-200);
 }
+
+.display-none{
+  display: none;
+}
+
 

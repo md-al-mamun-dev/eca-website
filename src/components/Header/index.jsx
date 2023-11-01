@@ -56,7 +56,7 @@ const Header = () => {
       </div>
 
       {/* <div className={styles.custom_div}></div> */}
-      <div className={` round_10 ${styles.hr_bar}`} />
+      {/* <div className={` round_10 ${styles.hr_bar}`} /> */}
     </div>
 
   )
