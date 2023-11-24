@@ -1,0 +1,17 @@
+.doc_container{
+    /* width: max-content; */
+    min-height: 99vh;
+    height: max-content;
+    transform: scale(1);
+    transform-origin: 0 0;
+    border: none;
+    background: var(--clr-neutral-800_a_50);
+    /* background-color: rgb(9, 45, 59); */
+    /* border: 3px solid red; */
+    
+    
+}
+
+.pdf_viewer{
+    height: 99.4vh;
+}

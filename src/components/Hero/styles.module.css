@@ -70,6 +70,7 @@
         grid-area: hero_txt_description;    
         font-size: var(--fs-50);
         padding-right: var(--size-800);
+        line-height: -1;
     }
 
     .hero_images{

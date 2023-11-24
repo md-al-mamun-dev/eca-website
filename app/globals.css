@@ -7,6 +7,7 @@
   --clr-neutral-100: hsl(0, 0%, 94%); 
   --clr-neutral-300: hsl(0, 0%, 89%);
   --clr-neutral-800: hsl(120, 1%, 28%);
+  --clr-neutral-800_a_50: hsla(120, 1%, 28%, 0.5);
   --clr-neutral-900: hsl(232, 12%, 13%);
 
   --ff-primary: 'Inter', sans-serif;

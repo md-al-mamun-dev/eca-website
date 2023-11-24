@@ -7,9 +7,6 @@ import ContactUs from '@/src/components/ContactUs'
 
 export default function Home() {
 
-  const handleScroll = (e) =>{
-    console.log(e)
-  }
   return (
     <>
       <Header/>
@@ -19,7 +16,6 @@ export default function Home() {
           <ContactUs/>
         </main>
       <Footer/>
-
     </>
   )
 }
