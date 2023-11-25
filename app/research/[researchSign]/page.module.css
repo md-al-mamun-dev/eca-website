@@ -98,13 +98,12 @@
     border: 1px solid var(--clr-primary-600);
     border-radius: 5px;
     text-transform: capitalize;
-   }
-
-   .action_btn> a:hover {
+}
+.action_btn> a:hover {
     background: var(--clr-primary-100);
     color: white;
     text-shadow: #000 0px 0 1px;
     scale: 1.1;
 
-   }
+}
 

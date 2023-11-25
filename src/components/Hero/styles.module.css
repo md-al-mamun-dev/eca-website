@@ -3,6 +3,7 @@
         margin-top: 102px;
         /* border: 1px solid red;  */
         height: fit-content;
+        max-width: 1280px;
 
     }
     .hero_txt_header{

@@ -45,7 +45,7 @@ const Header = () => {
       <div className={`container  ${styles.container}`}>
 
             <div className={`${styles.logo_image_container} ${scrollTop > 100 ? 'mr-top-0 mr-bottom-0': 'mr-top-12 mr-bottom-12'}`}>
-              <a href='/#hero'>
+              <a href='/#home'>
                 <Image 
                   className={` ${imgWidth} ${styles.logo_image}`}
                   src={logo}

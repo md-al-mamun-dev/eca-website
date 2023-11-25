@@ -1,0 +1,38 @@
+.title{
+    /* color: white; */
+    text-align: center;
+    font-size: var(--fs-700);
+    letter-spacing: var(--letter-spacing-200) ;
+    font-weight: var(--fw-semi-bold);
+}
+
+@media screen and (min-width: 768px) {
+    .title{
+        font-size: var(--fs-750);
+        letter-spacing: var(--letter-spacing-250) ;
+    }
+  }
+
+@media screen and (min-width: 1024px) {
+    .title{
+        font-size: var(--fs-750);
+        letter-spacing: var(--letter-spacing-300) ;
+    }
+  }
+
+@media screen and (min-width: 1440px) {
+.title{
+    font-size: var(--fs-800);
+    letter-spacing: var(--letter-spacing-300) ;
+}
+}
+.about_us_txt{
+    padding-top: var(--size-700);
+    padding-bottom: var(--size-700);
+    letter-spacing: .16;
+    line-height: 3;
+    /* border: 1px solid red; */
+    max-width: 1200px;
+    
+
+}

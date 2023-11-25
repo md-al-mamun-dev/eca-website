@@ -18,7 +18,7 @@ const Hero = () => {
 
 
   return (
-    <div id='hero' className={`container ${styles.container} ${styles.hero}` }>
+    <div id='home' className={`container ${styles.container} ${styles.hero}` }>
 
       <div className={`${styles.hero_txt_header}`}>
         <h2> Working with visionaries on the frontlines of social change worldwide</h2>

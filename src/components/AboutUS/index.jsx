@@ -1,11 +1,7 @@
 "use client"
-import { useEffect, useState } from 'react'
-import styles from './page.module.css'
-// import { useRouter } from 'next/router'
-import Header from '@/src/components/Header'
-import Image from 'next/image'
-import Footer from '@/src/components/Footer'
-import Research from '@/src/components/Research'
+import styles from './styles.module.css'
+import { useState } from 'react'
+
 
 
 const researches = [
@@ -45,63 +41,24 @@ const researches = [
       thumbnail: `module_rio_conventions.jpg.png`
     } ]
 
-const ResearchDetails = ({params}) => {
+const AboutUs = ({showHeading}) => {
+    const [aboutUsTxt, setAboutUsTxt] = useState(`Environment Care Associates (ECA) is committed to tackling global environmental challenges and climate change. We stand as a beacon of hope and action, both locally and globally. Originating in Bangladesh, our mission centers on creating harmony between development and the environment for a resilient future. Fueled by our zeal for positive transformation, we embark on diverse initiatives spanning various sectors. These efforts advocate for sustainable policies, empower communities to adopt eco-friendly practices, and pioneer innovative solutions to address climate complexities. Our collaborations unite experts, activists, policymakers, and passionate individuals, fostering a world where development aligns harmoniously with nature. Through research, advocacy, and practical projects, we catalyze transformative change, contributing significantly to global discussions on environmental conservation, sustainable development, and climate adaptation. We are working towards a greener and fairer world where progress intertwines with environmental preservation. Together, our collective endeavors will shape a better future!`)
 
-  const [researchInfo, setResearchInfo] = useState({})
+    return (
+      <div id='aboutus' className={``}>
+        <h2 className={`${styles.title}`}>AboutUs</h2>
+        <div className={`round_10 w-50 h-center hr-bar ${styles.hr_bar}`} />
 
-    function containsOnlyNumbers(str) {
-        return /^\d+$/.test(str);
-      }
-
-
-    useEffect(()=>{
-      if(!containsOnlyNumbers(params.researchSign)){
-        const name  = decodeURI(params.researchSign)
-        const info = researches.find(e => e.name.trim()=== name.trim())
-        setResearchInfo(info)
-      }else{
-        const researchId =  parseInt(params.researchSign)
-        const info = researches.find(e => e.id === researchId)
-        setResearchInfo(info)
-      }
-
-    }, [params])
-
-console.log(researchInfo)
-  return (
-    <div >
-      <Header/>
-
-      <div className='container'>
-        <div className={` ${styles.research_details_page}`}> 
-          
-          
-          <div className={`${styles.info_image_wrapper}`} >
-              <Image src={`/images/research/${researchInfo?.image}`} fill objectFit='contain'/>         
-          </div>    
-
-          <h3 className={` ${styles.research_title}`}>
-            {researchInfo?.name}
-          </h3>   
-          
-          <div className={`${styles.details}`}>
-            <p> {researchInfo?.details} </p>
-          </div>
-
-          <div className={`${styles.action_btn}`}>
-            <a className={`${styles.download_btn}`}> download </a>
-            <a className={`${styles.view_details}`}> view details </a>
-          </div>
-
-
-          
+        <div className={`container ${styles.about_us_txt}`}>
+            {`${aboutUsTxt}`}
         </div>
-      </div>
-      
-      <Research/>
-      <Footer/>
-    </div>
-  )
-}
 
-export default ResearchDetails
+
+
+
+  
+      </div>
+    )
+  }
+  
+  export default AboutUs

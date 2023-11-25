@@ -4,6 +4,7 @@ import Hero from '@/src/components/Hero'
 import Research from '@/src/components/Research'
 import Footer from '@/src/components/Footer'
 import ContactUs from '@/src/components/ContactUs'
+import AboutUs from '@/src/components/AboutUS'
 
 export default function Home() {
 
@@ -12,6 +13,7 @@ export default function Home() {
       <Header/>
         <main>
           <Hero/>
+          <AboutUs/>
           <Research showHeading={true}/>
           <ContactUs/>
         </main>

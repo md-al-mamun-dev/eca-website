@@ -46,7 +46,7 @@ const researches = [
 
 const Research = ({showHeading}) => {
   return (
-    <div id='research' className={`container ${styles.container} ${styles.research}`}>
+    <div id='research' className={` ${styles.container} ${styles.research}`}>
       {
         showHeading 
         ? <h2 className={`${styles.title}`}>Researches</h2>
@@ -55,8 +55,41 @@ const Research = ({showHeading}) => {
 
       <div className={`round_10 w-50 h-center hr-bar ${styles.hr_bar}`} />
 
+      <div className={`container ${styles.researchs}`}>
+        {
+          researches.map(researchInfo => (
+            <div className={`${styles.research_item}`}>
+              <div className={`${styles.info_image_wrapper}`} >
+                  <Image src={`/images/research/${researchInfo?.image}`} fill objectFit='contain'/>         
+              </div>    
 
-      <div className={` ${styles.research_papers}`} >
+              <h3 className={` ${styles.research_title}`}>
+                {researchInfo?.name}
+              </h3>   
+              
+              <div className={`${styles.research_details}`}>
+                <p> {researchInfo?.details} </p>
+              </div>
+
+              <div className={`${styles.action_btn}`}>
+                <a className={`${styles.download_btn}`}> download </a>
+                {/* <a className={`${styles.view_details}`}> view details </a> */}
+              </div>
+            </div>
+          ))
+        }
+
+
+
+
+          
+
+      </div>
+
+
+
+
+      {/* <div className={` ${styles.research_papers}`} >
 
         {
             researches.map(research_paper =>( 
@@ -82,7 +115,7 @@ const Research = ({showHeading}) => {
         }
 
         
-      </div>
+      </div> */}
       
 
     </div>
