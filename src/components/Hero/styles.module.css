@@ -1,5 +1,18 @@
+@media(min-width:768px){
+    .hero{
+        margin-top: 102px;
+        /* border: 1px solid red;  */
+        height: fit-content;
+
+    }
+    .hero_txt_header{
+    }
+}
+
+
 .hero_txt_header{
-    padding: var(--size-400);
+    margin-top: var(--size-700);
+    padding-top: var(--size-700);
 }
 .hero_txt_header >*{
     font-weight: var(--fw-bold);
@@ -54,7 +67,7 @@
 @media (min-width: 800px){
     .hero{
         display: grid;
-        grid-template-columns: 40% 60%;
+        grid-template-columns: 1fr 1fr;
         grid-template-areas:'hero_txt_header hero_images'
                             'hero_txt_description hero_images' ;
     }
@@ -108,7 +121,7 @@
 @media (min-width: 1023px) {
 .hero{ 
     height: 70vh;
-    grid-template-columns: 35% 65%;
+    grid-template-columns:  1fr .7fr;
 }
 .hero_txt_header {
     position: relative;

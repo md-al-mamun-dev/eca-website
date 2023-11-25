@@ -10,6 +10,8 @@
     /* background: rgb(197, 197, 197); */
     /* display: block; */
     /* border: 1px solid red; */
+    position: fixed;
+    top: 0;
 }
 .container{
     /* min-height: fit-content; */

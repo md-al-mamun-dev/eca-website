@@ -19,7 +19,7 @@ import youtube_icon from 'public/icon/social-youtube.svg'
 
 const ContactUs = () => {
   return (
-    <div className={`container ${styles.container} `}>
+    <div id='contact' className={`container ${styles.container} `}>
 
         <div className={`${styles.contact_us_header}`}>
             <h2 className={`txt-center`}>Contact Us</h2>

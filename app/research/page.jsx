@@ -8,6 +8,7 @@ import PDFViewer from '@/src/components/PDFViewer';
 // import {useEffect, useRef} from 'react';
 
 
+
 const Research = () => {
 
   // const viewer = useRef(null);
@@ -38,17 +39,16 @@ const Research = () => {
     <div className={styles.doc_container}>
 
         {/* <iframe src="research/ResilienceProject.pdf" width="100%" className={`${styles.pdf_viewer}`} style={{ border: 'none' }} /> */}
-        <iframe src="research/Training Modules on Rio Conventions.pdf" width="100%" className={`${styles.pdf_viewer}`} style={{ border: 'none' }} />
+        <iframe 
+          src="research/Training Modules on Rio Conventions.pdf" 
+          width="100%" 
+          className={`${styles.pdf_viewer}`} 
+          style={{ border: 'none' }} />
 
         {/* <PDFViewer fileSrc={'research/ResilienceProject.pdf'}/> */}
         {/* <PDFViewer fileSrc={'research/Training Modules on Rio Conventions.pdf'}/> */}
 
-
-
         {/* <div className="webviewer" ref={viewer} style={{height: "100vh"}}></div> */}
-
-
-
     </div>
   )
 }

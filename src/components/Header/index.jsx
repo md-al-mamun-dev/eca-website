@@ -10,7 +10,7 @@ const Header = () => {
   // const [scale, setScale] = useState('grow-100');
   const [imgWidth, setImgWidth] = useState();
 
-  const [position, setPosition] = useState('relative');
+  const [position, setPosition] = useState('fixed');
 
 
 
@@ -25,7 +25,7 @@ const Header = () => {
       setPosition('sticky')
     }
     else{
-      setPosition('relative')
+      setPosition('fixed')
     }
   }, [scrollTop])
 
@@ -43,14 +43,18 @@ const Header = () => {
   return (
     <div className={` ${styles.header} ${position}`} >
       <div className={`container  ${styles.container}`}>
+
             <div className={`${styles.logo_image_container} ${scrollTop > 100 ? 'mr-top-0 mr-bottom-0': 'mr-top-12 mr-bottom-12'}`}>
-              <Image 
-                className={` ${imgWidth} ${styles.logo_image}`}
-                src={logo}
-                fill
-                objectFit='contain'
-                alt="logo"
-              />
+              <a href='/#hero'>
+                <Image 
+                  className={` ${imgWidth} ${styles.logo_image}`}
+                  src={logo}
+                  fill
+                  objectFit='contain'
+                  alt="logo"
+                />  
+              </a>
+              
             </div>
           <Navbar/>
       </div>

@@ -12,7 +12,7 @@ export default function Home() {
       <Header/>
         <main>
           <Hero/>
-          <Research/>
+          <Research showHeading={true}/>
           <ContactUs/>
         </main>
       <Footer/>
