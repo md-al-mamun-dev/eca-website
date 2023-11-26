@@ -21,7 +21,8 @@ const Navbar = () => {
         </div>
           <ul className={`${styles.navlist} `}>
               <li><a className={`${styles.active}`} href="/#home">Home</a></li>
-              {/* <li><a href="#aboutus">About Us</a></li> */}
+              <li><a href="#aboutus">About Us</a></li>
+
               <li><a href="/#research">Research</a></li>
               <li><a href="/#contact">Contact Us</a></li>
           </ul>

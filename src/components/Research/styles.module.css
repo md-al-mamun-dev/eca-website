@@ -10,6 +10,7 @@
 
     background-position: center;
     padding-top: var(--size-700); */
+    padding-top: var(--size-900);
 
     height: max-content;
 }
@@ -163,7 +164,7 @@
 
 .action_btn {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
 
     gap: var(--size-700);
     padding: var(--fs-800);

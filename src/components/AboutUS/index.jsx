@@ -45,7 +45,7 @@ const AboutUs = ({showHeading}) => {
     const [aboutUsTxt, setAboutUsTxt] = useState(`Environment Care Associates (ECA) is committed to tackling global environmental challenges and climate change. We stand as a beacon of hope and action, both locally and globally. Originating in Bangladesh, our mission centers on creating harmony between development and the environment for a resilient future. Fueled by our zeal for positive transformation, we embark on diverse initiatives spanning various sectors. These efforts advocate for sustainable policies, empower communities to adopt eco-friendly practices, and pioneer innovative solutions to address climate complexities. Our collaborations unite experts, activists, policymakers, and passionate individuals, fostering a world where development aligns harmoniously with nature. Through research, advocacy, and practical projects, we catalyze transformative change, contributing significantly to global discussions on environmental conservation, sustainable development, and climate adaptation. We are working towards a greener and fairer world where progress intertwines with environmental preservation. Together, our collective endeavors will shape a better future!`)
 
     return (
-      <div id='aboutus' className={``}>
+      <div id='aboutus' className={`${styles.about_us_seaction}`}>
         <h2 className={`${styles.title}`}>AboutUs</h2>
         <div className={`round_10 w-50 h-center hr-bar ${styles.hr_bar}`} />
 
