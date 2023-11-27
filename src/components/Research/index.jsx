@@ -49,7 +49,7 @@ const Research = ({showHeading}) => {
     <div id='research' className={` ${styles.container} ${styles.research}`}>
       {
         showHeading 
-        ? <h2 className={`${styles.title}`}>Researches</h2>
+        ? <h2 className={`${styles.title}`}>Research</h2>
         : <></>
         }
 

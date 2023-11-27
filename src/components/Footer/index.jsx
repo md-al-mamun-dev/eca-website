@@ -67,14 +67,14 @@ const Footer = () => {
 
 
         <div className={` ${styles.address}`}>
-          <p> 39 abcd Street, Pallabi Mirpur 11 1/2,<br/> Dhaka bangladesh</p>
+          <p> 24/1 Pallabi Mirpur 12, <br/> Dhaka-1216 bangladesh</p>
         </div>
 
         <div className={` ${styles.mail_info}`}>
           <p>demo_mail@gmail.com</p>
         </div>
         <div className={` ${styles.phone_info}`}>
-          <p> +1012 3456 789</p>
+          <p>+880 01629 414216</p>
         </div>
 
         <div className={` ${styles.site_map}`}> </div>

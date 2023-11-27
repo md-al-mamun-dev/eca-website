@@ -215,6 +215,16 @@ body{
   text-align: center;
 }
 
+.capitalize{
+  text-transform: capitalize;
+}
+.uppercase{
+  text-transform: uppercase;
+}
+.lowercase{
+  text-transform: lowercase;
+}
+
 .dv-center{
   margin: 0 auto;
 }

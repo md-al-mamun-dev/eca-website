@@ -44,7 +44,7 @@ const ContactUs = () => {
                                 />
                         </div>
 
-                        <p> +1012 3456 789</p>
+                        <p> +880 01629 414216</p>
                     </div>
 
                     <div className={`${styles.contact_info_item}`}>
@@ -66,7 +66,7 @@ const ContactUs = () => {
                                 />
                         </div>
 
-                        <p> 39 abcd Street, Pallabi Mirpur 11 1/2,<br/> Dhaka bangladesh</p>
+                        <p> 24/1 Pallabi Mirpur 12, <br/> Dhaka-1216 bangladesh</p>
                     </div>
                 </div>
 
