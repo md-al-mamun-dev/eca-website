@@ -158,11 +158,11 @@
     background: var(--clr-primary-100);
     color: white;
   }
-description  .navlist > .nav_item > .nav_menu > li:last-child:hover{
+.description  .navlist > .nav_item > .nav_menu > li:last-child:hover{
     border-radius: 0 0 3px 3px;
   }
 
-  .nav_sub_menu > .description{
+.nav_sub_menu > .description{
     position: absolute;
     right: 100%;
     top: 0;
@@ -172,8 +172,34 @@ description  .navlist > .nav_item > .nav_menu > li:last-child:hover{
     color: black;
     padding: 40px;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    min-height: 80vh;
     display: none;
-  }
+}
+.nav_sub_menu:nth-child(1) > .description{
+    margin-top: 50px;
+    top: calc(-51px * 1);
+}
+.nav_sub_menu:nth-child(2) > .description{
+    margin-top: 50px;
+    top: calc(-51px * 2);
+}
+.nav_sub_menu:nth-child(3) > .description{
+    margin-top: 50px;
+    top: calc(-51px * 3);
+}
+.nav_sub_menu:nth-child(4) > .description{
+    margin-top: 50px;
+    top: calc(-51px * 4);
+}
+.nav_sub_menu:nth-child(5) > .description{
+    margin-top: 50px;
+    top: calc(-51px * 5);
+}
+.nav_sub_menu:nth-child(6) > .description{
+    margin-top: 50px;
+    top: calc(-51px * 6);
+}
+
 
 
   .navlist > .nav_item > .nav_menu > .nav_sub_menu:hover > .description{
