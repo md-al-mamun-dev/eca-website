@@ -21,35 +21,38 @@ const Hero = () => {
     <div id='home' className={`container ${styles.container} ${styles.hero}` }>
 
       <div className={`${styles.hero_txt_header}`}>
-        <h2 className='capitalize'> Committed to tackling global environmental challenges and climate change</h2>
+          <h2 className='capitalize'>Committed to tackling global environmental challenges and climate change</h2>
+        {/* <h2 className='capitalize'> </h2> */}
       </div>           
 
 
       <div className={`${styles.hero_images}`}>
-        <div className={`${styles.hero_image_container}`}>
+        {/* <div className={`${styles.hero_image_container}`}>
           <Image
             className={`${styles.hero_image}`}
             fill
             src={image_2}
             // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
-        </div>
-        <div className={`${styles.hero_image_container}`}>
+        </div> */}
+        {/* <div></div> */}
+        <div className={`${styles.hero_image_container} `}>
           <Image
             className={`${styles.hero_image}`}
             fill
+            objectFit='contain'
             src={image_0}
             // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
         </div>
-        <div className={`${styles.hero_image_container}`}>
+        {/* <div className={`${styles.hero_image_container}`}>
           <Image
             className={`${styles.hero_image}`}
             fill
             src={image_1}
             // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
-        </div>
+        </div> */}
       </div>
 
       <div className={`${styles.hero_txt_description}`}>
