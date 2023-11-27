@@ -22,7 +22,7 @@ const ContactUs = () => {
     <div id='contact' className={`container ${styles.container} `}>
 
         <div className={`${styles.contact_us_header}`}>
-            <h2 className={`txt-center`}>Contact Us</h2>
+            <h2 className={`txt-center`}>Get in touch</h2>
             <div className={` round_10 hr-bar ${styles.hr_bar} w-60 h-center`} />
         </div>
         
@@ -156,39 +156,34 @@ const ContactUs = () => {
          Just send us...!</p>
 
             <form className={`v-center ${styles.contact_form}`}>
-                    <div className={`${styles.form_item} ${styles.form_name}`}>
-                        <label for="name"><b>Name</b></label>
-                        <input type="text" placeholder="Type your Name" name="name" id="name" required />
-                    </div>
+                <div className={`${styles.form_item} ${styles.form_name}`}>
+                    <label for="name"><b>Name</b></label>
+                    <input type="text" placeholder="Type your Name" name="name" id="name" required />
+                </div>
 
-                    <div className={`${styles.form_item} ${styles.form_email}`}>
-                        <label for="email"><b>Email</b></label>
-                        <input type="text" placeholder="Provide your Email" name="email" id="email"  />
-                    </div>
+                <div className={`${styles.form_item} ${styles.form_email}`}>
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Provide your Email" name="email" id="email"  />
+                </div>
 
-                    <div  className={`${styles.form_item} ${styles._txt_or}`}>
-                        <p>or</p>
-                    </div>
+                <div  className={`${styles.form_item} ${styles._txt_or}`}>
+                    <p>or</p>
+                </div>
 
-                    <div className={`${styles.form_item} ${styles.form_phone_number}`}>
-                        <label for="phone">Phone number</label>
-                        <input type="tel" placeholder='phone number' id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" />
-                    </div>
-
-
-                    <div className={`${styles.form_item} ${styles.form_message}`}>
-                        <label for="w3review">Your message</label>
-                        <textarea id="w3review" name="w3review" rows="4" cols="50" placeholder='Please type your complaine, feedback,  message or any suggession to us....!'/>
-                    </div>
-                    <div className={`${styles.form_item} ${styles.form_send_btn}`}>
-                        <button  className={`btn ${styles.send_btn}`} type="submit">Send</button>
-                    </div>
-
-                    
-                </form>
+                <div className={`${styles.form_item} ${styles.form_phone_number}`}>
+                    <label for="phone">Phone number</label>
+                    <input type="tel" placeholder='phone number' id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" />
+                </div>
 
 
-
+                <div className={`${styles.form_item} ${styles.form_message}`}>
+                    <label for="w3review">Your message</label>
+                    <textarea id="w3review" name="w3review" rows="4" cols="50" placeholder='Please type your complaine, feedback,  message or any suggession to us....!'/>
+                </div>
+                <div className={`${styles.form_item} ${styles.form_send_btn}`}>
+                    <button  className={`btn ${styles.send_btn}`} type="submit">Send</button>
+                </div>                    
+            </form>
         </div> */}
       </div>
     </div>
