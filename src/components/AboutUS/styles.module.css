@@ -28,7 +28,8 @@
 }
 
 .about_us{
-    margin-top: var(--size-1400);
+    margin-top: var(--size-1000);
+    padding-top: var(--size-1000);
     
     /* padding-top: 100px; */
 }
