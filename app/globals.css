@@ -36,6 +36,7 @@
   --fs-800: 2.5rem;
   --fs-900: 3rem;
   --fs-1000: 3.2rem;
+  
   --fs-body: var(--fs-400);
   --fs-primary-heading: var(--fs-800);
   --fs-secondary-heading: var(--fs-700);
@@ -60,6 +61,8 @@
   --size-800: 4rem;
   --size-900: 5rem;
   --size-1000: 8rem;
+  --size-1100: 9rem;
+
   --size-1400: 14rem;
 }
 

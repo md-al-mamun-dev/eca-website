@@ -27,8 +27,10 @@
 }
 }
 
-.about_us_seaction{
-    padding-top: var(--size-800);
+.about_us{
+    margin-top: var(--size-1400);
+    
+    /* padding-top: 100px; */
 }
 .about_us_txt{
     padding-top: var(--size-700);
