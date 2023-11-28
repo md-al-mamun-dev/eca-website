@@ -22,7 +22,7 @@ const ContactUs = () => {
     <div id='contact' className={`container ${styles.container} `}>
 
         <div className={`${styles.contact_us_header}`}>
-            <h2 className={`txt-center`}>Get in touch</h2>
+            <h2 className={`txt-center f-semi-bold`}>Get in touch</h2>
             <div className={` round_10 hr-bar ${styles.hr_bar} w-60 h-center`} />
         </div>
         
@@ -125,7 +125,7 @@ const ContactUs = () => {
 
                 <div className={`${styles.form_item} ${styles.form_email}`}>
                     <label for="email"><b>Email</b></label>
-                    <input type="text" placeholder="Provide your Email" name="email" id="email"  />
+                    <input className={`${styles.form_input}`} type="text" placeholder="Provide your Email" name="email" id="email"  />
                 </div>
 
                     <div  className={` ${styles._txt_or}`}>

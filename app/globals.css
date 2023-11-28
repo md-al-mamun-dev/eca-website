@@ -66,6 +66,7 @@
   --size-1400: 14rem;
 }
 
+
 @media (min-width: 47em) {
   :root{
     --fs-body: var(--fs-600);
@@ -283,8 +284,17 @@ body{
 }
 .max-w-50{
   scale: 0.5;
-
 }
+
+.f-bold{
+  font-weight: var(--fw-bold);
+}
+.f-semi-bold{
+  font-weight: var(--fw-semi-bold);
+}
+
+
+
 /* Shrink Animation */
 .grow-100 {
   animation-name: grow-100;
