@@ -37,7 +37,7 @@ const researches = [
     id:5,
     name: 'Training Module on Rio Conventions',
     details: 'This training manual represents guiding resources and materials of three Rio Conventions: its obligations, relevant policies, decision-making processes and practices from a 360° perspective to global environmental challenges. This is prepared for the national counterparts working in the government of Bangladesh, but it can also be used by other development practitioners working in the field of environment, particularly biodiversity conversation, climate change adaptation, desertification, and land degradation.',
-    image: `module_rio_conventions.jpg`,
+    image: `module_rio_conventions.png`,
     thumbnail: `module_rio_conventions.jpg.png`
   } ]
 
@@ -49,7 +49,7 @@ const Research = ({showHeading}) => {
     <div id='research' className={` ${styles.container} ${styles.research}`}>
       {
         showHeading 
-        ? <h2 className={`${styles.title}`}>Research</h2>
+        ? <h2 className={`${styles.title} f-semi-bold`}>Research</h2>
         : <></>
         }
 
