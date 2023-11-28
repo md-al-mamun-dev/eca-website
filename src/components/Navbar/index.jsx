@@ -2,13 +2,19 @@
 import styles from './styles.module.css'
 import Image from 'next/image'
 import hamburger_menu from 'public/icon/hamburger-menu.svg'
+import { useState } from 'react'
 
 
 
 const Navbar = () => {
-  // const router = useRouter() 
 
-// console.log(router.pathname)
+  const [activeNavigation, setActiveNavigation] = useState("home")
+
+
+  const changeNavigation = ( nav ) =>{
+    setActiveNavigation(nav)
+  }
+
 
   return (
     <>
@@ -20,10 +26,16 @@ const Navbar = () => {
             width={30}/>
         </div>
           <ul className={`${styles.navlist} `}>
-              <li className={`${styles.nav_item}`}><a className={`${styles.active}`} href="/#home">Home</a></li>
-              <li className={`${styles.nav_item}`}><a href="#aboutus">About Us</a></li>
               <li className={`${styles.nav_item}`}>
-                <a href="#sector">Sectors</a>
+                <a className={`   ${activeNavigation === "home" ? styles.active  :" "} `} href="/#home" onClick={()=>setActiveNavigation('home')}>Home</a></li>
+              <li className={`${styles.nav_item} `}>
+                <a href="#aboutus" 
+                  className={`${activeNavigation === "aboutus" ? styles.active  :" "}`}
+                  onClick={()=>setActiveNavigation('aboutus')}>
+                About Us</a>
+              </li>
+              <li className={`${styles.nav_item}`}>
+                <a href="#sector" >Sectors</a>
                 <ul className={`${styles.nav_menu}`} >
                   <li className={`${styles.nav_sub_menu}`}>
                     Climate Change
@@ -216,8 +228,13 @@ const Navbar = () => {
               </li>
 
 
-              <li className={`${styles.nav_item}`}><a href="/#research">Research</a></li>
-              <li className={`${styles.nav_item}`}><a href="/#contact">Get in Touch</a></li>
+              <li className={`${styles.nav_item}`}>
+                <a href="/#research" 
+                className={`${activeNavigation === "research" ? styles.active  :" "}`}
+                onClick={()=>setActiveNavigation('research')}>Research</a></li>
+              <li className={`${styles.nav_item}`}><a href="/#contact"
+                className={`${activeNavigation === "contact" ? styles.active  :" "}`}
+                onClick={()=>setActiveNavigation('contact')}>Get in Touch</a></li>
           </ul>
           <div className={` ${styles.hr_bar}`} />    
       </div>
