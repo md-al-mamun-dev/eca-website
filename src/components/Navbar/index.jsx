@@ -236,7 +236,14 @@ const Navbar = () => {
                 className={`${activeNavigation === "contact" ? styles.active  :" "}`}
                 onClick={()=>setActiveNavigation('contact')}>Get in Touch</a></li>
           </ul>
-          <div className={` ${styles.hr_bar}`} />    
+          
+          
+          
+          
+          {/* <div className={` ${styles.hr_bar}`} />  */}
+
+
+
       </div>
     
     </>
