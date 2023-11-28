@@ -19,7 +19,6 @@
     text-align: center;
     font-size: var(--fs-700);
     letter-spacing: var(--letter-spacing-200) ;
-    font-weight: var(--fw-semi-bold);
 }
 
 @media screen and (min-width: 768px) {
@@ -109,18 +108,42 @@
     display: grid;
     padding-top: var(--size-600);
     padding-bottom: var(--size-600);
-    gap: 60px;
+    gap: 24px;
 }
 .info_image_wrapper{
     position: relative;
     grid-area: image;
-    height: 500px;
-    width: 600px;
-    /* border: 1px solid red; */
-    /* border: 1px solid red; */
+    width: 100%;
+    min-height: 300px;
 
-
+    /* max-width: 100%; */
 }
+@media(min-width:425px){
+    .info_image_wrapper{
+        min-height: 400px;        
+    }
+}
+@media(min-width:425px){
+    .info_image_wrapper{
+        min-height: 400px;        
+    }
+}
+
+@media(min-width:768px){
+    .info_image_wrapper{
+        min-height: 600px;        
+    }
+}
+
+@media(min-width:1024px){
+    .info_image_wrapper{
+        min-width: 600px;
+        height: 400px;        
+    }
+}
+
+
+
 .research_title{
     grid-area: title;
     font-weight: var(--fw-bold);
@@ -138,26 +161,49 @@
     /* border: 1px solid red; */
 
 }
-
-
-.research_item:nth-child(odd){
-    grid-template-areas: 'image title'
-                        'image details'
-                        'image cta';
+.research_item{
+    grid-template-areas:    ' title'
+                            'image'
+                            'details'
+                            ' cta';
+    /* border: 1px solid red; */
 }
-
-.research_item:nth-child(even){
-    grid-template-areas: 'title image '
-                        'details image '
-                        'cta image ';
+.research_item > *:not(.action_btn){
+    margin: 0 auto;
 }
-
-.research_item:nth-child(even) > .action_btn{
+.research_item > .action_btn{
     justify-content: end;
 }
-.research_item:nth-child(odd) > .action_btn{
-    justify-content: start;
+
+@media(min-width:1024px){
+    .research_item{
+        gap: 60px;
+    }
+    .research_item:nth-child(odd){
+        grid-template-areas: 'image title'
+                            'image details'
+                            'image cta';
+    }
+    
+    .research_item:nth-child(even){
+        grid-template-areas: 'title image '
+                            'details image '
+                            'cta image ';
+    }
+    
+    
+    .research_item:nth-child(even) > .action_btn{
+        justify-content: end;
+        /* margin-right: 0; */
+        /* border: 2px solid red; */
+    }
+    .research_item:nth-child(odd) > .action_btn{
+        justify-content: start;
+        /* margin-left: 0; */
+    }
 }
+
+
 
 
 
