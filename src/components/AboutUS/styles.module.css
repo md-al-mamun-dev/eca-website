@@ -3,7 +3,6 @@
     text-align: center;
     font-size: var(--fs-700);
     letter-spacing: var(--letter-spacing-200) ;
-    font-weight: var(--fw-semi-bold);
 }
 
 @media screen and (min-width: 768px) {
